@@ -1,11 +1,12 @@
 Scotch Box
 ==========
 
-Scotch Box is a preconfigured Vagrant Box with a full array of LAMP Stack features to get you up and running with Vagrant in no time.
+## Check out the official docs at: [box.scotch.io][16]
+## Read the article at [scotch.io][17]
 
 ![Scotch Box](http://scotch.io/wp-content/uploads/2014/10/banner.jpg)
 
-### Check out the official docs at: [box.scotch.io][16] and Read the article at [scotch.io][17]
+Scotch Box is a preconfigured Vagrant Box with a full array of LAMP Stack features to get you up and running with Vagrant in no time.
 
 A lot of PHP websites and applications don’t require much server configuration or overhead at first. This box should have all your needs for doing basic development so you don’t have to worry about configuring Vagrant and you can simply focus on your code.
 
