@@ -31,7 +31,9 @@ So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and 
 ![Scotch Box SSH](http://scotch.io/wp-content/uploads/2014/10/scotch-box-ssh.jpg)
 
 
+
 ## Features
+
 
 ### Useful Stuff
 - PHP 5.5
