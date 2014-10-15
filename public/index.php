@@ -215,7 +215,17 @@
                         </tr>
 
                         <tr>
+                            <td>Ruby</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+
+                        <tr>
                             <td>Composer</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>Laravel Installer</td>
                             <td><i class="fa fa-check"></i></td>
                         </tr>
 
@@ -258,6 +268,7 @@
                             <td>Gulp</td>
                             <td><i class="fa fa-check"></i></td>
                         </tr>
+
                     </table>
                 </div>
             </div>
