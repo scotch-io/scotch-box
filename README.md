@@ -43,7 +43,7 @@ So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and 
 - Operating System agnostic
 - Goodbye XAMPP / WAMP
 - New Vagrant version? Update worry free. ScotchBox is very reliable with a lesser chance of breaking with various updates
-- Bootstrap and jQuery are saved in the server's home folder in case you don't have Internet (usually plains, trains or cars)
+- Bootstrap and jQuery are saved in the server's home folder in case you don't have Internet (usually planes, trains or cars)
 - Chef and Puppet ready in case you want to add extra features on Vagrant Up
 - Super easy database access and control
     MIT License
