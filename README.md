@@ -142,7 +142,9 @@ If you're like me, you prefer to develop at a domain name versus an IP address. 
 
 Or if you want "www" to work as well, do:
 
+```bash
 192.168.33.10 whatever-i-want.local www.whatever-i-want.local
+```
 
 Technically you could also a Vagrant Plugin like [Vagrant Hostmanager][15] to automatically update your host file when you run Vagrant Up. However, the purpose of Scotch Box is to have as little dependencies as possible so that it's always working when you run "vagrant up".
 
