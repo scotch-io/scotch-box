@@ -106,7 +106,7 @@
             background: #e3e3e3;
         }
         article .content .wrap {
-            background: #05003D;
+            background: rgba(255, 27, 53, 0.8);
             margin-bottom: 50px;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -164,21 +164,69 @@
         </div>
     </div>
 
-    <section id="topper" style="background-image: url('data:image/svg+xml;base64,<?php echo base64_encode('<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs id="defs4"><filter color-interpolation-filters="sRGB" id="filter3115"><feTurbulence type="fractalNoise" numOctaves="1" baseFrequency="0.9" id="feTurbulence3117"/><feColorMatrix result="result5" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -4.15 " id="feColorMatrix3119"/><feComposite in2="result5" operator="in" in="SourceGraphic" result="result6" id="feComposite3121"/><feMorphology in="result6" operator="dilate" radius="3" result="result3" id="feMorphology3123"/></filter></defs><rect width="100%" height="100%" x="0" y="0" id="rect2985" fill="#000000"/><rect width="100%" height="100%" x="0" y="0" id="rect2985" style="fill:#0084ff;filter:url(#filter3115)"/></svg>'); ?>');">
-        <h1>Welcome to<br>Scotch Box <i class="fa fa-heart"></i></h1>
+    <section id="topper" style="background-image: url('data:image/svg+xml;base64,<?php echo base64_encode('<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs id="defs4"><filter color-interpolation-filters="sRGB" id="filter3115"><feTurbulence type="fractalNoise" numOctaves="1" baseFrequency="0.9" id="feTurbulence3117"/><feColorMatrix result="result5" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -4.15 " id="feColorMatrix3119"/><feComposite in2="result5" operator="in" in="SourceGraphic" result="result6" id="feComposite3121"/><feMorphology in="result6" operator="dilate" radius="20" result="result3" id="feMorphology3123"/></filter></defs><rect width="100%" height="100%" x="0" y="0" id="rect2985" fill="#000000"/><rect width="100%" height="100%" x="0" y="0" id="rect2985" style="fill:#0785FF;filter:url(#filter3115)"/></svg>'); ?>');">
+        <h1>Welcome to<br>Scotch Box 2.0 <i class="fa fa-heart"></i></h1>
     </section>
-
 
     <article>
         <div class="container">
+
             <div class="row content">
                 <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Installed Software</h2>
+                    <h2>System Stuff</h2>
                     <table class="table table-responsive table-striped table-hover">
+                        <tr>
+                            <td>OS</td>
+                            <td>Ubuntu 14.04 LTS (Trusty Tahr) </td>
+                        </tr>
                         <tr>
                             <td>PHP Version</td>
                             <td><?php echo phpversion(); ?></td>
                         </tr>
+                        <tr>
+                            <td>Ruby 2.2.x</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Vim</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Git</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>cURL</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Imagick</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Composer</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Beanstalkd</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Node</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>NPM</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-6 col-md-offset-3 wrap">
+                    <h2>Database Stuff</h2>
+                    <table class="table table-responsive table-striped table-hover">
                         <?php
                         $mysql_exists = FALSE;
                         if (extension_loaded('mysql') or extension_loaded('mysqli')) :
@@ -206,6 +254,44 @@
                             <td>MySQL Version</td>
                             <td><?php echo ($mysql_running ? $mysql_version : 'N/A'); ?></td>
                         </tr>
+
+
+                        <?php
+                        $psql_is_connected = FALSE;
+                        $psql_conn = pg_connect('host=localhost port=5432 dbname=scotchbox user=root password=root');
+                        if ($psql_conn) $psql_is_connected = TRUE;
+                        $psql_version = pg_version($psql_conn)['client'];
+                        pg_close($psql_conn);
+                        ?>
+                        <tr>
+                            <td>PostgreSQL is installed</td>
+                            <td><i class="fa fa-<?php echo ($psql_is_connected ? 'check' : 'times'); ?>"></i></td>
+                        </tr>
+                        <tr>
+                            <td>PostgreSQL is connected</td>
+                            <td><i class="fa fa-<?php echo ($psql_is_connected ? 'check' : 'times'); ?>"></i></td>
+                        </tr>
+                        <tr>
+                            <td>PostgreSQL Version</td>
+                            <td><?php echo ($psql_version ? $psql_version : 'N/A'); ?></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-6 col-md-offset-3 wrap">
+                    <h2>Caching stuff</h2>
+                    <table class="table table-responsive table-striped table-hover">
+                        <?php
+                        $redis = new Redis();
+                        $redis->connect('127.0.0.1', 6379);
+                        ?>
+                        <tr>
+                            <td>Redis</td>
+                            <td><i class="fa fa-<?php echo ($redis->ping() ? 'check' : 'times'); ?>"></i></td>
+                        </tr>
+
                         <?php
                         $memcached_running = FALSE;
                         $memcached_version = FALSE;
@@ -223,47 +309,18 @@
                             <td>Memcached running</td>
                             <td><i class="fa fa-<?php echo ($memcached_running ? 'check' : 'times'); ?>"></i></td>
                         </tr>
-
                         <tr>
                             <td>Memcached version</td>
                             <td><?php echo ($memcached_version ? $memcached_version : 'N/A'); ?></td>
                         </tr>
+                    </table>
+                </div>
+            </div>
 
-                        <tr>
-                            <td>Ruby</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Composer</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Laravel Installer</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Git</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>cURL</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>GD and Imagick</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>NPM</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
+            <div class="row content">
+                <div class="col-md-6 col-md-offset-3 wrap">
+                    <h2>Node/NPM Stuff</h2>
+                    <table class="table table-responsive table-striped table-hover">
                         <tr>
                             <td>Grunt</td>
                             <td><i class="fa fa-check"></i></td>
@@ -284,29 +341,44 @@
                             <td><i class="fa fa-check"></i></td>
                         </tr>
 
-                    </table>
-                </div>
-            </div>
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>PHP Modules</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <?php
-                        $modules = get_loaded_extensions();
-                        asort($modules);
-                        foreach ($modules as $extension) :
-                        ?>
                         <tr>
-                            <td><?php echo $extension; ?></td>
+                            <td>Browsersync</td>
                             <td><i class="fa fa-check"></i></td>
                         </tr>
-                        <?php endforeach; ?>
+
+                        <tr>
+                            <td>PM2</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
                     </table>
                 </div>
             </div>
+
             <div class="row content">
                 <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Database Credentials</h2>
+                    <h2>Laravel Stuff</h2>
+                    <table class="table table-responsive table-striped table-hover">
+                        <tr>
+                            <td>Laravel Installer</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>Laravel Envoy</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>Blackfire Profiler</td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-6 col-md-offset-3 wrap">
+                    <h2>MySQL Database Credentials</h2>
                     <table class="table table-responsive table-striped table-hover">
                         <tr>
                             <td>Hostname</td>
@@ -327,6 +399,35 @@
                     </table>
                 </div>
             </div>
+
+            <div class="row content">
+                <div class="col-md-6 col-md-offset-3 wrap">
+                    <h2>PostgreSQL Database Credentials</h2>
+                    <table class="table table-responsive table-striped table-hover">
+                        <tr>
+                            <td>Hostname</td>
+                            <td>localhost</td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td>root</td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>root</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>scotchbox</td>
+                        </tr>
+                        <tr>
+                            <td>Port</td>
+                            <td>5432</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
             <div class="row content">
                 <div class="col-md-6 col-md-offset-3 wrap">
                     <h2>SSH Credentials</h2>
@@ -346,6 +447,25 @@
                     </table>
                 </div>
             </div>
+
+            <div class="row content">
+                <div class="col-md-6 col-md-offset-3 wrap">
+                    <h2>All PHP Modules</h2>
+                    <table class="table table-responsive table-striped table-hover">
+                        <?php
+                        $modules = get_loaded_extensions();
+                        asort($modules);
+                        foreach ($modules as $extension) :
+                        ?>
+                        <tr>
+                            <td><?php echo $extension; ?></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </article>
 
