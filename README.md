@@ -51,7 +51,7 @@ So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and 
 
 ### Database Stuff
 - MySQL
-- PostresQL
+- PostgreSQL
 - SQLite
 
 ### Caching Stuff
