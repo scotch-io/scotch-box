@@ -434,7 +434,7 @@
                     <table class="table table-responsive table-striped table-hover">
                         <tr>
                             <td>SSH Host</td>
-                            <td><?php echo $_SERVER['REMOTE_ADDR']; ?></td>
+                            <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
                         </tr>
                         <tr>
                             <td>SSH User</td>
