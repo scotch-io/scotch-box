@@ -142,6 +142,14 @@ vagrant ssh
 
 
 
+## SSH Access
+
+- Hostname: 127.0.0.1:2222
+- Username: vagrant
+- Password: vagrant
+
+
+
 ## Updating the Box
 
 Although not necessary, if you want to check for updates, just type:
@@ -150,7 +158,7 @@ Although not necessary, if you want to check for updates, just type:
 vagrant box outdated
 ```
 
-It will tell you if you are running the latest version or not of the box. If it says you aren't, simply run:
+It will tell you if you are running the latest version or not, of the box. If it says you aren't, simply run:
 
 ```bash
 vagrant box update
@@ -159,7 +167,7 @@ vagrant box update
 
 ## Setting a Hostname
 
-If you're like me, you prefer to develop at a domain name versus an IP address. If you want to get rid of the some-what ugly IP address, just add a record like the following example to your laptop's host file.
+If you're like me, you prefer to develop at a domain name versus an IP address. If you want to get rid of the some-what ugly IP address, just add a record like the following example to your computer's host file.
 
 ```bash
 192.168.33.10 whatever-i-want.local
@@ -171,7 +179,7 @@ Or if you want "www" to work as well, do:
 192.168.33.10 whatever-i-want.local www.whatever-i-want.local
 ```
 
-Technically you could also a Vagrant Plugin like [Vagrant Hostmanager][15] to automatically update your host file when you run Vagrant Up. However, the purpose of Scotch Box is to have as little dependencies as possible so that it's always working when you run "vagrant up".
+Technically you could also use a Vagrant Plugin like [Vagrant Hostmanager][15] to automatically update your host file when you run Vagrant Up. However, the purpose of Scotch Box is to have as little dependencies as possible so that it's always working when you run "vagrant up".
 
 
 
