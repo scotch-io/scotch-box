@@ -78,7 +78,6 @@ So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and 
 
 - No Internet connection required
 - PHP Errors turned on
-- No Internet connection required
 - Laravel and WordPress ready
 - Operating System agnostic
 - Goodbye XAMPP / WAMP
@@ -93,10 +92,10 @@ So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and 
 
 ## Get Started
 
-* Download and Install Vagrant
-* Download and Install VirtualBox
-* Clone the Scotch Box GitHub Repository
-* Run Vagrant Up
+* Download and Install [Vagrant][3]
+* Download and Install [VirtualBox][4]
+* Clone the Scotch Box [GitHub Repository](https://github.com/scotch-io/scotch-box)
+* Run ``` vagrant up ```
 * Access Your Project at  [http://192.168.33.10/][14]
 
 ## Basic Vagrant Commands
