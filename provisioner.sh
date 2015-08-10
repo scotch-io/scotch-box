@@ -26,7 +26,6 @@ sudo echo "</Directory>" >> /etc/apache2/mods-available/vhost_alias.conf
 # enable Apache mod_rewrite
 sudo a2enmod vhost_alias
 
-
 # Install phpmyadmin silently
 #echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf-set-selections
 #echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | debconf-set-selections
@@ -36,4 +35,15 @@ sudo a2enmod vhost_alias
 #echo "phpmyadmin phpmyadmin/app-password-confirm password" | debconf-set-selections
 #apt-get -q -y install phpmyadmin
 
-service apache2 reload
+# Set some very lax php.ini settings for local development
+upload_max_filesize=100M
+post_max_size=100M
+max_execution_time=600
+max_input_time=600
+memory_limit=512M
+for key in upload_max_filesize post_max_size max_execution_time max_input_time memory_limit
+do
+ sed -i "s/^\($key\).*/\1 $(eval echo = \${$key})/" /etc/php5/apache2/php.ini
+done
+
+service apache2 restart
