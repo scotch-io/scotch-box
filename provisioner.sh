@@ -1,5 +1,13 @@
 #! /bin/bash
 
+if [ -d /var/www/aliases ];
+then
+  find /var/www/aliases -maxdepth 1 -type l -exec rm -f {} \;
+  rmdir /var/www/aliases
+fi
+
+mkdir /var/www/aliases
+
 for d in /var/www/* ; do
   BASE=$(basename $d);
   if [ $BASE == 'aliases' ]
