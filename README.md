@@ -6,7 +6,7 @@ Scotch Box
 ## [Read the 2.0 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-0-our-dead-simple-vagrant-lamp-stack-improved)
 ## [Read the 2.5 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-5)
 
-![Scotch Box](https://scotch.io/wp-content/uploads/2015/11/Screen-Shot-2015-11-03-at-1.31.52-PM.png)
+![Scotch Box](https://cask.scotch.io/2015/07/scotch-box-2.png)
 
 Scotch Box is a preconfigured Vagrant Box with a full array of LAMP Stack features to get you up and running with Vagrant in no time.
 
@@ -15,7 +15,7 @@ A lot of PHP websites and applications don’t require much server configuration
 No provisioning tools or setup is really even required with Scotch Box. Since everything is packaged into the box, running “vagrant” is super fast, you’ll never have to worry about your environment breaking with updates, and you won’t need Internet to code.
 
 
-![Scotch Box](https://cask.scotch.io/2015/07/Screen-Shot-2015-07-15-at-10.49.17-AM.png)
+![Scotch Box](https://scotch.io/wp-content/uploads/2015/11/Screen-Shot-2015-11-03-at-1.31.52-PM.png)
 
 
 ## What and Why
