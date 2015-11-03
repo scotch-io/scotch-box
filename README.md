@@ -4,6 +4,7 @@ Scotch Box
 ## Check out the official docs at: [box.scotch.io][16]
 ## [Read the getting started article](https://scotch.io/bar-talk/introducing-scotch-box-a-vagrant-lamp-stack-that-just-works)
 ## [Read the 2.0 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-0-our-dead-simple-vagrant-lamp-stack-improved)
+## [Read the 2.5 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-5)
 
 ![Scotch Box](https://cask.scotch.io/2015/07/scotch-box-2.png)
 
@@ -141,6 +142,12 @@ vagrant ssh
 - Port: 5432
 
 
+### MongoDB
+
+- Hostname: localhost
+- Database: scotchbox
+- Port: 27017
+
 
 ## SSH Access
 
@@ -148,6 +155,20 @@ vagrant ssh
 - Username: vagrant
 - Password: vagrant
 
+## Mailcatcher
+
+Just do:
+
+```
+vagrant ssh
+mailcatcher --http-ip=0.0.0.0
+```
+
+Then visit:
+
+```
+http://192.168.33.10:1080
+```
 
 
 ## Updating the Box
