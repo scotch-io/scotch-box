@@ -203,6 +203,41 @@ Or if you want "www" to work as well, do:
 Technically you could also use a Vagrant Plugin like [Vagrant Hostmanager][15] to automatically update your host file when you run Vagrant Up. However, the purpose of Scotch Box is to have as little dependencies as possible so that it's always working when you run "vagrant up".
 
 
+## Configuration
+
+You may want to change some of the out-of-the-box configurations for
+the various parts that come with Scotch Box.  To do so, `vagrant ssh`
+into the box, and edit the appropriate file.  For example, to change
+PHP settings:
+
+    vagrant ssh
+    sudo vim /etc/php5/apache2/conf.d/user.ini
+
+Note that the changes that you make will be for the current running
+Scotch Box only.  If you `vagrant destroy` and then `vagrant up` your
+box again, these manual configuration changes will be lost.
+
+If you prefer to automate your configuration changes so that you can
+destroy and re-create boxes as needed, Vagrant allows you to create a
+"provision script" that runs as part of `vagrant up`.  See the
+[Vagrant
+documentation](https://docs.vagrantup.com/v2/getting-started/provisioning.html)
+for notes.  For example, you could add the following line to your
+Vagrantfile under the `config.vm.hostname = "scotchbox"` line:
+
+    config.vm.provision :shell, path: "bootstrap.sh"
+
+and then create `bootstrap.sh` with the following content in the same
+directory as the Vagrantfile:
+
+    #!/bin/bash
+    # Disable Zend OPcache
+    sed -i 's/;opcache.enable=0/opcache.enable=0/g' /etc/php5/apache2/php.ini
+
+This script will be run each time you `vagrant up`, and it can be run
+on an already-up box using `vagrant provision`.
+
+
 
 ## The MIT License (MIT)
 
