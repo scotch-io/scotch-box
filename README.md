@@ -27,7 +27,7 @@ I used to use this seriously awesome [Vagrant LAMP Stack][1] that I even wrote a
 So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and requires provisioning and no configuration. You simply boot it up and it just works. **It's not for every project, but it sure will help you get straight to it with a lot of them**.
 
 
-> Are you new to Vagrant? If your new to Vagrant, check out our [getting started guide with Vagrant][2] article, our [Vagrant Share article][10], and our article on [Larvel’s Vagrant stack Homestead][11]. If you follow the first tutorial, you can just learn the Vagrant commands but use the Scotch Box instead.
+> Are you new to Vagrant? If you're new to Vagrant, check out our [getting started guide with Vagrant][2] article, our [Vagrant Share article][10], and our article on [Laravel’s Vagrant stack Homestead][11]. If you follow the first tutorial, you can just learn the Vagrant commands but use the Scotch Box instead.
 
 
 ![Scotch Box SSH](https://cask.scotch.io/2014/10/scotch-box-ssh.jpg)
