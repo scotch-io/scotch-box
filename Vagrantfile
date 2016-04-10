@@ -16,6 +16,10 @@ Vagrant.configure("2") do |config|
     # Optional NFS. Make sure to remove other synced_folder line too
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
     
+    # Provision to install PhpMemcacheAdmin
+    config.vm.provision :shell, :privileged => true,   :path => "bin/phpmemcacheadmin.sh"
+
     # Provision to install PhpMyAdmin
     config.vm.provision :shell, :privileged => true,   :path => "bin/phpmyadmin.sh"
+
 end

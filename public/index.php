@@ -187,12 +187,22 @@
                             <td>PhpMyAdmin</td>
                             <td>
                                 <p>
-                                    <a href="http://<?php echo $_SERVER['HTTP_HOST']?>:8888/phpmyadmin">
+                                    <a target="_blank" href="http://<?php echo $_SERVER['HTTP_HOST']?>:8888/phpmyadmin">
                                         http://<?php echo $_SERVER['HTTP_HOST']?>:8888/phpmyadmin
                                     </a>
                                 </p>
                                 <p>User Name: phpmyadmin</p>
                                 <p>Password: vagrant</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PhpMemcacheAdmin</td>
+                            <td>
+                                <p>
+                                    <a target="_blank" href="http://<?php echo $_SERVER['HTTP_HOST']?>:8888/phpmemcacheadmin">
+                                        http://<?php echo $_SERVER['HTTP_HOST']?>:8888/phpmemcacheadmin
+                                    </a>
+                                </p>
                             </td>
                         </tr>
                         <tr>

@@ -39,6 +39,14 @@ So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and 
 
 - Ubuntu 14.04 LTS (Trusty Tahr)
 - PHP 5.6
+- PhpMyAdmin
+	|- http://192.0.0.0:8888/phpmyadmin
+	|- Username: phpmyadmin
+	|- Password: vagrant
+
+- PhpMemcacheAdmin
+	|- http://192.0.0.0:8888/phpmemcacheadmin
+	
 - Ruby 2.2.x
 - Vim
 - Git

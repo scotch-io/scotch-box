@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Description: Script file to install PhpMyAdmin inside Vagrant box(jankrib/ubuntu-gae-php)
-#              and configure with apache2 to work on port 8888, username root password vagrant
+# Description: Script file to install PhpMyAdmin inside Vagrant box
+#              and configure with apache2 to work on port 8888
 # Author: Abdelaziz Elrashed(aeemh.sdn@gmail.com)
 # Created Date: 10-03-2016 13:00 GMT+3
 
@@ -34,7 +34,7 @@ sudo php5enmod mcrypt
 
 echo "Configure PhpMyAdmin to work in port(8888)..."
 sudo mv /etc/phpmyadmin/apache.conf /etc/phpmyadmin/apache.conf.old
-sudo echo "<VirtualHost *:8888>${nl}$(cat /etc/phpmyadmin/apache.conf.old)${nl}Alias / /usr/share/phpmyadmin/8888_web_root${nl}</VirtualHost>" > /etc/phpmyadmin/apache.conf
+sudo echo "<VirtualHost *:8888>${nl}$(cat /etc/phpmyadmin/apache.conf.old)${nl}Alias /phpmemcacheadmin /usr/share/phpmemcacheadmin${nl}</VirtualHost>" > /etc/phpmyadmin/apache.conf
 
 # Make apache Listen to port 8888 for PhpMyAdmin
 sudo echo "Listen 8888" >> /etc/apache2/ports.conf 
