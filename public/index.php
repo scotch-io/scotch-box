@@ -184,6 +184,18 @@
                             <td><?php echo phpversion(); ?></td>
                         </tr>
                         <tr>
+                            <td>PhpMyAdmin</td>
+                            <td>
+                                <p>
+                                    <a href="http://<?php echo $_SERVER['HTTP_HOST']?>:8888/phpmyadmin">
+                                        http://<?php echo $_SERVER['HTTP_HOST']?>:8888/phpmyadmin
+                                    </a>
+                                </p>
+                                <p>User Name: phpmyadmin</p>
+                                <p>Password: vagrant</p>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Ruby 2.2.x</td>
                             <td><i class="fa fa-check"></i></td>
                         </tr>
