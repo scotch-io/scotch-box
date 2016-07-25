@@ -173,7 +173,7 @@ http://192.168.33.10:1080
 
 ## Installing WordPress
 
-![WPDistillery](http://wpdistillery.org/sharedcontent/wpdistillery_logo_lowpadding.png)
+![WPDistillery](http://files.flurinduerst.ch/wpdistillery/wpdistillery_logo_lowpadding.png)
 
 WPDistillery does all the work for you when setting up a new WordPress project on Scotch Box. You can add your  preferred settings into a configuration file and WPDistillery will set up WordPress for you:
 * download/install/configure WordPress in your language
