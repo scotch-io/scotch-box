@@ -158,7 +158,7 @@
                     <li><a href="http://github.com/scotch-io/scotch-box">Star on GitHub</a></li>
                     <li><a href="http://scotch.io">Scotch.io</a></li>
                     <li><a href="https://twitter.com/scotch_io">@scotch_io</a></li>
-                    <li><a href="https://twitter.com/nickforthought">@nickforthought</a></li>
+                    <li><a href="https://twitter.com/whatnicktweets">@whatnicktweets</a></li>
                 </ul>
             </div>
         </div>
