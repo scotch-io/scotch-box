@@ -264,6 +264,15 @@ sudo a2enmod php7.0
 sudo apachectl restart
 ```
 
+After installing PHP7 you may get the following PHP error with some PHP applications (specifically if you decide to install PHPMyAdmin)
+```
+The mbstring extension is missing. Please check your PHP configuration.
+```
+To fix this perform the following commands
+```
+sudo apt-get install php-mbstring
+sudo service apache2 restart
+```
 
 ## The MIT License (MIT)
 
