@@ -170,6 +170,17 @@ Then visit:
 http://192.168.33.10:1080
 ```
 
+### Run Mailcatcher on every `vagrant up`
+
+Add
+
+```
+# Mailcatcher
+config.vm.provision "shell", inline: "/home/vagrant/.rbenv/shims/mailcatcher --http-ip=0.0.0.0", run: "always"
+```
+
+to your `Vagrantfile`, inside the `Vagrant.configure("2") do |config|` block. If your machine is already provisioned, you need to run `vagrant up --provision` (or `vagrant provision` on a running machine) once to get this working. After that, Mailcatcher will run on every `vagrant up`.
+
 
 ## Installing WordPress
 
