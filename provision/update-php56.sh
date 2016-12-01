@@ -30,7 +30,7 @@ echo "============================================"
 sudo apt-get install libapache2-mod-php5.6 -y
 sudo apt-get install php5.6 php5.6-cgi php5.6-cli php5.6-common php5.6-curl php5.6-fpm php5.6-gd \
 php5.6-intl php5.6-mcrypt php5.6-memcache php5.6-memcached php5.6-mongo php5.6-mysqlnd php5.6-pgsql \
-php5.6-readline php5.6-redis php5.6-sqlite php5.6-mbstring php5.6-zip php5.6-json php5.6-xdebug php-imagick -y
+php5.6-readline php5.6-redis php5.6-sqlite php5.6-mbstring php5.6-zip php5.6-json php5.6-xdebug php5.6-xml php-imagick -y
 sudo a2dismod php5
 sudo a2enmod php5.6
 # uninstall old php5 packages
