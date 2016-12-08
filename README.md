@@ -41,13 +41,13 @@ So that's why I decided to build a Vagrant LAMP Box. The box is prepackaged and 
 - PHP 5.6
 - Ruby 2.2.x
 - Vim
-- Git
+- Git 1.9
 - cURL
 - GD and Imagick
 - Composer
 - Beanstalkd
-- Node
-- NPM
+- Node 5.0
+- NPM 3.3
 - Mcrypt
 
 ### Database Stuff
