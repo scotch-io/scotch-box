@@ -181,7 +181,7 @@
                         </tr>
                         <tr>
                             <td>PHP Version</td>
-                            <td><?php echo phpversion(); ?></td>
+                            <td><?php echo phpversion(); ?> &nbsp; <a href="info.php"><i class="fa fa-info"></i>nfo</a></td>
                         </tr>
                         <tr>
                             <td>Ruby 2.2.x</td>
