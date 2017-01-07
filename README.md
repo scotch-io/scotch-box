@@ -230,7 +230,7 @@ Technically you could also use a Vagrant Plugin like [Vagrant Hostmanager][15] t
 
 ## Setting public as SSH-Default-Directory
 
-If your first command after `vagrant ssh` is `cd /var/www/public` than you can add the following lines to your Vagrantfile under the `config.vm.hostname = "scotchbox"`
+If your first command after `vagrant ssh` is `cd /var/www/public` then you can add the following lines to your Vagrantfile under the `config.vm.hostname = "scotchbox"`
 
     # change ssh-default-directory
     # 1. fix error: 'stdin: is not a tty'
