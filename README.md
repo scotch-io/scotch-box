@@ -228,6 +228,19 @@ Or if you want "www" to work as well, do:
 Technically you could also use a Vagrant Plugin like [Vagrant Hostmanager][15] to automatically update your host file when you run Vagrant Up. However, the purpose of Scotch Box is to have as little dependencies as possible so that it's always working when you run "vagrant up".
 
 
+## Setting SSH-Default-Directory
+
+If your first command after `vagrant ssh` is `cd /var/www/public` than you can add the folowing lines to your Vagrantfile under the `config.vm.hostname = "scotchbox"`
+
+    # change ssh-login-dir
+    # 1. fix error: 'stdin: is not a tty'
+    config.vm.provision "fix-no-tty", type: "shell", privileged: false, inline: "sudo sed -i '/tty/!s/mesg n/tty -s \\&\\& mesg n/' /root/.profile"
+    # 2. add actual ssh-login-dir
+    config.vm.provision "change ssh-login-dir", type: "shell", inline: "sudo echo \"# Goto public\ncd /var/www/public\"  >> /home/vagrant/.bashrc"
+    
+*The 'fix-error' is an optional command to remove the error `stdin: is not a tty` on `vagrant up`. It's a 'Bug' in Ubuntu without effect on the process. The Fix is inspired by and explained on: [foo-o-rama.com/vagrant--stdin-is-not-a-tty--fix.html](http://foo-o-rama.com/vagrant--stdin-is-not-a-tty--fix.html).*
+
+
 ## Configuration
 
 You may want to change some of the out-of-the-box configurations for
