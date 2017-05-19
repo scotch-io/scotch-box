@@ -265,8 +265,8 @@ on an already-up box using `vagrant provision`.
 ## PHP7 Install Instructions
 
 ```
-sudo apt-get update
 sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
 sudo apt-get install php7.0
 sudo apt-get update
 sudo apt-get install php7.0-mysql libapache2-mod-php7.0
