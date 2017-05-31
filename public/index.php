@@ -275,6 +275,7 @@ main {
 
     <main>
 
+
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -284,37 +285,95 @@ main {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><strong>Scotch Box</strong></a>
+                    <a class="navbar-brand" href="/"><strong>🥃  📦 Scotch Box</strong></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Docs <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="https://box.scotch.io">Official Docs</a></li>
+
+                                <li class="dropdown-header">How-To's</li>
+                                <li><a href="https://box.scotch.io/docs">Get Started</a></li>
+                                <li><a href="https://box.scotch.io/docs">Vagrant Intro</a></li>
+                                <li><a href="https://box.scotch.io/docs">Access the Database</a></li>
+                                <li><a href="https://box.scotch.io/docs">Upgrade the Box</a></li>
+                                <li><a href="https://box.scotch.io/docs">Set a Hostname</a></li>
+
                                 <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Jump Nav</li>
-                                <li><a href="#server-stuff">Server Stuff</a></li>
-                                <li><a href="#php-stuff">PHP Stuff</a></li>
-                                <li><a href="#database-stuff">Database Stuff</a></li>
-                                <li><a href="#caching-stuff">Caching Stuff</a></li>
-                                <li><a href="#node-stuff">Node Stuff</a></li>
-                                <li><a href="#ssh-stuff">SSH Stuff</a></li>
-                                <li><a href="#email-stuff">Email Stuff</a></li>
-                                <li><a href="#share-stuff">Share Stuff</a></li>
+
+                                <li class="dropdown-header">Blog Posts (old stuff is still good)</li>
+                                <li><a href="https://scotch.io/bar-talk/announcing-scotch-box-pro">3.0 Release Article</a></li>
+                                <li><a href="https://scotch.io/bar-talk/announcing-scotch-box-2-5">2.5 Release Article</a></li>
+                                <li><a href="https://scotch.io/bar-talk/announcing-scotch-box-2-0-our-dead-simple-vagrant-lamp-stack-improved">2.0 Release Article</a></li>
+                                <li><a href="https://scotch.io/bar-talk/introducing-scotch-box-a-vagrant-lamp-stack-that-just-works">1.0 Release Article</a></li>
+
                             </ul>
                         </li>
-                        <li><a href="https://github.com/scotch-io/scotch-box">Star on GitHub</a></li>
-                        <li><a href="https://scotch.io">Scotch.io</a></li>
-                        <li><a href="https://twitter.com/scotch_io">@scotch_io</a></li>
-                        <li><a href="https://twitter.com/whatnicktweets">@whatnicktweets</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pro Docs <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                <li class="dropdown-header">Pro Stuff</li>
+                                <li><a href="https://box.scotch.io/members">Get Started</a></li>
+                                <li><a href="https://box.scotch.io/members">NGINX Version</a></li>
+                                <li><a href="https://box.scotch.io/members">Build Scripts</a></li>
+                                <li><a href="https://box.scotch.io/members">Create a Personalized / Custom Box</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Support</li>
+                                <li><a href="https://github.com/mitchellh/vagrant/issues">Vagrant Questions</a></li>
+                                <li><a href="https://github.com/scotch-io/scotch-box/issues">Scotch Box Questions</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Common Questions <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                <li class="dropdown-header">General Questions</li>
+                                <li><a href="https://box.scotch.io/common-questions">Why no __________?</a></li>
+                                <li><a href="https://box.scotch.io/common-questions">Why no phpMyAdmin?</a></li>
+                                <li><a href="https://box.scotch.io/common-questions">Why no XDebug?</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li class="dropdown-header">Guides</li>
+                                <li><a href="https://box.scotch.io/common-questions">How to Install Laravel?</a></li>
+                                <li><a href="https://box.scotch.io/common-questions">How to Install WordPress?</a></li>
+                                <li><a href="https://box.scotch.io/common-questions">Custom Provisioning?</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li class="dropdown-header">Vagrant Issues</li>
+                                <li><a href="https://box.scotch.io/common-questions">Vagrant is slow!</a></li>
+                                <li><a href="https://box.scotch.io/common-questions">SSH not working?</a></li>
+                                <li><a href="https://box.scotch.io/common-questions">Weird authentication issues? Can't connect to box</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li class="dropdown-header">Modifying the box</li>
+                                <li><a href="https://box.scotch.io/common-questions">Maria DB?</a></li>
+                                <li><a href="https://box.scotch.io/common-questions">Multiple Domains? (virtualhost)</a></li>
+
+                            </ul>
+                        </li>
+
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="https://box.scotch.io/pro">Go Pro</a></li>
+                             <li>
+        <a href="https://scotch.io" target="_blank" style="
+        position: relative;
+        "><img src="https://scotch.io/img/icons/gold/favicon-96x96.png" style="max-width: 25px;position: absolute;left: -15px;top: 11px;"> Scotch.io</a>
+                        </li>
+
+                        <li class="active"><a href="/pro">Go Pro</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+
         <article>
             <header class="make-me-a-princess">
                 <div class="container-fluid">
