@@ -1,6 +1,8 @@
 
 # Scotch Box
 
+## [GET SCOTCH BOX PRO](https://box.scotch.io)
+
 Just a Dead-Simple Local LAMP/LEMP Stack for Vagrant. **Making Vagrant EASY AS EATING CAKE for developers.**
 
 ![Scotch Box](https://box.scotch.io/img/pro-banner.png)
@@ -52,6 +54,17 @@ Pro will help support the project, let you customize somet things a bit more, an
 * [Read the 2.0 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-0-our-dead-simple-vagrant-lamp-stack-improved)
 * [Read the 2.5 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-5)
 
+
+
 ## More Information
 
 Check-out [box.scotch.io](https://box.scotch.io) to learn more.
+
+
+
+
+## Special Thank You
+
+I was dark on this project for a little bit too long. Got caught up with work and a million other things. I apologize for slowness to release updates. I'm hoping the Pro version can create a bit more motivation to dedicate time to this. I also finally have the build scripts available for download with the Pro version so people can start addressing bugs themselves with your own personal boxes.
+
+Thanks to the community for bug fixes and provisioning tips. Special shout-out to [@maxpou](https://github.com/maxpou) for completely killing it with community responses 
