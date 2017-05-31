@@ -8,9 +8,22 @@ Just a Dead-Simple Local LAMP/LEMP Stack for Vagrant. **Making Vagrant EASY AS E
 Scotch Box is a pre-configured Vagrant Box with a full array of features to get you up and running with Vagrant in no time.
 
 
-## License Required?
+## Scotch Box 3.0!
 
-Still MIT License for the free version.
+3.0 is finally here here!
+
+* Fixed a bunch of issues via Github
+* Upgraded to PHP 7!
+* New website and Docs
+* "Scotch Box Pro" version released with even more features
+* New and improved starter file index.php
+
+
+## License Required?!!!!?!
+
+Still MIT License for the free version. Free version is still beast.
+
+Pro will help support the project, let you customize somet things a bit more, and will help this project survive. If you're super pissed about this, in school, working for good causes, hurting for cash, email me at nick@scotch.io so I can get you setup with Pro no charge.
 
 "Scotch Box Pro" is a paid version of the original Scotch Box. [Go Pro Now!](https://box.scotch.io/pro)
 
