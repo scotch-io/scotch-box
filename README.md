@@ -1,7 +1,7 @@
 
 # Scotch Box
 
-## [GET SCOTCH BOX PRO](https://box.scotch.io)
+## [GET SCOTCH BOX PRO](https://box.scotch.io/pro)
 
 Just a Dead-Simple Local LAMP/LEMP Stack for Vagrant. **Making Vagrant EASY AS EATING CAKE for developers.**
 
