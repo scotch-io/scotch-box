@@ -3,6 +3,8 @@
 
 ## [GET SCOTCH BOX PRO](https://box.scotch.io/pro)
 
+## [TUTORIAL](https://scotch.io/bar-talk/announcing-scotch-box-30-and-scotch-box-pro)
+
 Just a Dead-Simple Local LAMP/LEMP Stack for Vagrant. **Making Vagrant EASY AS EATING CAKE for developers.**
 
 ![Scotch Box](https://box.scotch.io/img/pro-banner.png)
