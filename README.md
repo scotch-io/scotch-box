@@ -35,7 +35,7 @@ Pro will help support the project, let you customize somet things a bit more, an
 * Ubuntu 16.04!
 * PHP 7!
 * MySQL 5.7!
-* NGNIX Option!
+* NGINX Option!
 * Go lang in the box
 * PHPUnit in the box
 * Yarn
