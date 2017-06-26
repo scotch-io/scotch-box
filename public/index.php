@@ -358,6 +358,10 @@ main {
 
                             </ul>
                         </li>
+                        
+                        <li>
+                            <a href="https://wpdistillery.org" target="_blank" role="button" aria-expanded="false"><i class="fa fa-wordpress"></i> WPDistillery</a>
+                        </li>
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
