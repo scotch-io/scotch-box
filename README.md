@@ -14,7 +14,7 @@ Scotch Box is a pre-configured Vagrant Box with a full array of features to get 
 
 ## Scotch Box 3.0!
 
-3.0 is finally here here!
+3.0 is finally here!
 
 * Fixed a bunch of issues via Github
 * Upgraded to PHP 7!
@@ -25,9 +25,9 @@ Scotch Box is a pre-configured Vagrant Box with a full array of features to get 
 
 ## License Required?!!!!?!
 
-Still MIT License for the free version. Free version is still beast.
+Still MIT License for the free version. The free version is still a beast.
 
-Pro will help support the project, let you customize somet things a bit more, and will help this project survive. If you're super pissed about this, in school, working for good causes, hurting for cash, email me at nick@scotch.io so I can get you setup with Pro no charge.
+Pro will help support the project, let you customize somet things a bit more, and will help this project survive. If you're super pissed about this, in school, working for good causes, or hurting for cash, then email me at nick@scotch.io so I can get you setup with Pro no charge.
 
 "Scotch Box Pro" is a paid version of the original Scotch Box. [Go Pro Now!](https://box.scotch.io/pro)
 
@@ -62,7 +62,7 @@ Pro will help support the project, let you customize somet things a bit more, an
 
 ![WPDistillery Logo](http://files.flurinduerst.ch/wpdistillery/wpdistillery_bright.png)
 
-WPDistillery is an amazing tool by [Flurin Dürst](https://twitter.com/flurinduerst) that kickstarts your WordPress installation on Scotch Box. It is actively maintained, has lots of features and gets you startet in less than 5 minutes.
+WPDistillery is an amazing tool by [Flurin Dürst](https://twitter.com/flurinduerst) that kickstarts your WordPress installation on Scotch Box. It is actively maintained, has lots of features and gets you started in less than 5 minutes.
 
 All you have to do is clone the repo, customize the configuration file to your needs, and <b>vagrant up</b>. WPDistillery will do the rest:
 
@@ -80,6 +80,6 @@ Check-out [box.scotch.io](https://box.scotch.io) to learn more.
 
 ## Special Thank You
 
-I was dark on this project for a little bit too long. Got caught up with work and a million other things. I apologize for slowness to release updates. I'm hoping the Pro version can create a bit more motivation to dedicate time to this. I also finally have the build scripts available for download with the Pro version so people can start addressing bugs themselves with your own personal boxes.
+I was dark on this project for a little bit too long, as I got caught up with work and a million other things. I apologize for slowness to release updates. I'm hoping the Pro version can create a bit more motivation to dedicate time to this. I also finally have the build scripts available for download with the Pro version so you all can start addressing bugs yourselves with your own personalized boxes.
 
-Thanks to the community for bug fixes and provisioning tips. Special shout-out to [@maxpou](https://github.com/maxpou) for completely killing it with community responses 
+Thanks to the community for bug fixes and provisioning tips. Special shout-out to [@maxpou](https://github.com/maxpou) for completely killing it with community responses. 
