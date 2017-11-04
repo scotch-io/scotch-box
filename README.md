@@ -27,7 +27,7 @@ Scotch Box is a pre-configured Vagrant Box with a full array of features to get 
 
 Still MIT License for the free version. The free version is still a beast.
 
-Pro will help support the project, let you customize somet things a bit more, and will help this project survive. If you're super pissed about this, in school, working for good causes, or hurting for cash, then email me at nick@scotch.io so I can get you setup with Pro no charge.
+Pro will help support the project, let you customize some things a bit more, and will help this project survive. If you're super pissed about this, in school, working for good causes, or hurting for cash, then email me at nick@scotch.io so I can get you setup with Pro no charge.
 
 "Scotch Box Pro" is a paid version of the original Scotch Box. [Go Pro Now!](https://box.scotch.io/pro)
 
