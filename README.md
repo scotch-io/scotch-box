@@ -63,7 +63,7 @@ Pro will help support the project, let you customize some things a bit more, and
 * [Read the 2.0 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-0-our-dead-simple-vagrant-lamp-stack-improved)
 * [Read the 2.5 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-5)
 * [Read the 3.0 release article](https://scotch.io/bar-talk/announcing-scotch-box-30-and-scotch-box-pro)
-* [Read the 3.5 release article]((https://scotch.io/bar-talk/announcing-scotch-box-v35-and-scotch-box-pro-v15-the-big-switcheroo)
+* [Read the 3.5 release article](https://scotch.io/bar-talk/announcing-scotch-box-v35-and-scotch-box-pro-v15-the-big-switcheroo)
 
 
 
