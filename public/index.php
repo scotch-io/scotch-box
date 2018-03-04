@@ -358,7 +358,7 @@ main {
 
                             </ul>
                         </li>
-                        
+
                         <li>
                             <a href="https://wpdistillery.org" target="_blank" role="button" aria-expanded="false"><i class="fa fa-wordpress"></i> WPDistillery</a>
                         </li>
@@ -384,11 +384,11 @@ main {
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <h1>
-                                😎
+                                🤩 🚀 😎 🐕
                                 <br>
                                 Welcome to Scotch Box
                             </h1>
-                            <p>Free Version 3.0 ❤️</p>
+                            <p>Free Version 3.5 ❤️</p>
                         </div>
                     </div>
                 </div>
@@ -401,17 +401,18 @@ main {
                             <p class="lead">This version is free and does everything you could possibly imagine. Please consider supporting this project by going <strong>pro</strong> and getting a bit more features and cool things.</p>
                             <h4>Some Pro Features Include:</h4>
                             <ul style="padding: 0; list-style: none;">
-                                <li>Ubuntu 16.04!</li>
-                                <li>MySQL 5.7!</li>
-                                <li>NGNIX Option!</li>
-                                <li>Go Lang in the box</li>
-                                <li>PHPUnit in the box</li>
-                                <li>Yarn</li>
-                                <li>Improved email catching with MailHog</li>
-                                <li>Vagrant Share working nicely finally</li>
-                                <li>The box's build scripts</li>
-                                <li>Customize your own boxes in minutes</li>
-                                <li>Generally higher versions of things (Node.js, Ruby, etc.)!</li>
+                                <li>NEW OS: Ubuntu-17.10!</li>
+                                <li>NEW PHP: PHP 7.2!</li>
+                                <li>NEW APACHE: 2.4.29</li>
+                                <li>NEW NGINX: 1.13.8</li>
+                                <li>NEW RUBY via RVM: 2.5.0</li>
+                                <li>NEW NODE via NVM: 8.9.4</li>
+                                <li>NEW BUILD SCRIPTS</li>
+                                <li>Fixes a MongoDB and PHP bug</li>
+                                <li>Laravel routing works out of the box with the NGINX version</li>
+                                <li>Adds Drush (Launcher) even though you should do this through Composer these days</li>
+                                <li>Updated WP-CLI version</li>
+                                <li>Generally WAY higher versions of everything else</li>
                             </ul>
                             <a href="https://box.scotch.io/pro" class="btn btn-danger">Go Pro</a>
                         </div>
@@ -445,17 +446,17 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>OS</strong></td>
-                                    <td>Ubuntu 14.04.5 LTS (Trusty Tahr)</td>
+                                    <td>Ubuntu 16.04 LTS (Xenial Xerus)</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Web Server</strong></td>
-                                    <td>Apache 2.4</td>
+                                    <td>Apache</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>PHP</strong></td>
-                                    <td>7.0</td>
+                                    <td>7.0.15</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -465,7 +466,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>Node.js</strong></td>
-                                    <td>5.0.0</td>
+                                    <td>6.10.3 (via NVM!)</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -477,7 +478,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>Ruby</strong></td>
-                                    <td>2.4</td>
+                                    <td>2.4 (via RVM!)</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -492,17 +493,22 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>Imagemagick</strong></td>
-                                    <td>6.7</td>
+                                    <td>6.8.9</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Curl</strong></td>
-                                    <td>7.35</td>
+                                    <td>7.47</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Beanstalkd</strong></td>
                                     <td>1.10</td>
+                                    <td>✅</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ngrok</strong></td>
+                                    <td>1.0</td>
                                     <td>✅</td>
                                 </tr>
                             </table>
@@ -538,7 +544,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>PHP</strong></td>
-                                    <td>7.0</td>
+                                    <td>7.0.15</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -570,8 +576,8 @@ main {
                                     <td>✅</td>
                                 </tr>
                                 <tr>
-                                    <td>PHPUnit</td>
-                                    <td>❌</td>
+                                    <td>PHPUnit 6.1.4</td>
+                                    <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td>WP-CLI</td>
@@ -689,7 +695,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td>Magento</td>
-                                    <td>❌</td>
+                                    <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td>Concrete5</td>
@@ -722,8 +728,7 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th colspan="3">
-                                        <h3>MySQL 5.5</h3>
-                                        <p>Upgrade to Pro version for 5.7 out-of-the-box.</p>
+                                        <h3>MySQL 5.7</h3>
                                     </th>
                                 </tr>
                                 <tr>
@@ -782,7 +787,7 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th colspan="3">
-                                        <h3>PostgreSQL 9.3.16</h3>
+                                        <h3>PostgreSQL 9.5.6</h3>
                                     </th>
                                 </tr>
                                 <tr>
@@ -833,7 +838,7 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th colspan="3">
-                                        <h3>MongoDB</h3>
+                                        <h3>MongoDB 2.6.10</h3>
                                     </th>
                                 </tr>
                                 <tr>
@@ -863,7 +868,7 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th colspan="3">
-                                        <h3>SQLite</h3>
+                                        <h3>SQLite 3.11.0</h3>
                                     </th>
                                 </tr>
                                 <tr>
@@ -1017,18 +1022,23 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>Node.js</strong></td>
-                                    <td>5.0.0</td>
+                                    <td>6.10.3</td>
+                                    <td>✅</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NVM</strong></td>
+                                    <td>Swich Node versions in seconds</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>NPM</strong></td>
-                                    <td>3.3</td>
+                                    <td>3.10.10</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Yarn</strong></td>
                                     <td>0.24.5</td>
-                                    <td>❌</td>
+                                    <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3"><h4>Global Packages</h4></td>
@@ -1040,7 +1050,9 @@ main {
                                     'bower',
                                     'yo',
                                     'browser-sync',
-                                    'pm2'
+                                    'browserify',
+                                    'pm2',
+                                    'webpack',
                                 );
                                 foreach ($packages as $package) :
                                 ?>
@@ -1083,7 +1095,7 @@ main {
                                             <br>
                                             <div class="form-group">
                                                 <label>SSH Host</label>
-                                                <input type="text" class="form-control" value="192.168.33.10">
+                                                <input type="text" class="form-control" value="127.0.0.1">
                                             </div>
                                             <div class="form-group">
                                                 <label>SSH User</label>
@@ -1092,6 +1104,10 @@ main {
                                             <div class="form-group">
                                                 <label>SSH Password</label>
                                                 <input type="text" class="form-control" value="vagrant">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>SSH Port</label>
+                                                <input type="text" class="form-control" value="2222">
                                             </div>
                                             <hr>
                                             <h4>"This isn't working!!!!" - you</h4>
@@ -1113,7 +1129,7 @@ main {
                     <div class="col-md-4 col-sm-6">
                         <div class="make-me-a-princess add-padding-fat text-center">
                             <h2>Email Stuff</h2>
-                            <p>Test emails locally! This is already setup with PHP too. You just need to turn it on.</p>
+                            <p>Test emails locally! This is already setup with PHP too.</p>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-6">
@@ -1121,14 +1137,10 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th>
-                                        <h3>Mailcatcher</h3>
-                                        <p>This isn't turned on automatically now. Here's how:</p>
-                                        <ul style="list-style: none;">
-                                            <li>First: <code>vagrant ssh</code></li>
-                                            <li>Run: `mailcatcher --http-ip=0.0.0.0`</li>
-                                            <li>Then visit: <a href="http://192.168.33.10:1080">http://192.168.33.10:1080</a></li>
-                                        </ul>
+                                        <h3>Mailhog</h3>
+                                        <p>This is turned on automatically now. Just visit the URL below:</p>
                                         <br>
+                                        <p><a href="http://192.168.33.10:8025">http://192.168.33.10:8025</a></p>
                                     </th>
                                 </tr>
                                 <tr>
@@ -1150,57 +1162,13 @@ main {
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <p>In Scotch Box Pro, we have this turned on by default and use MailHog instead!</p>
-                                    </td>
-                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>
             </section>
             <hr>
-            <section class="info-blocks" id="share-stuff">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="make-me-a-princess add-padding-fat text-center">
-                            <h2>Share Stuff</h2>
-                            <p>This box works with "Vagrant Share" again finally.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-sm-6">
-                        <div class="make-me-a-princess">
-                            <table class="table table-responsive table-striped table-hover">
-                                <tr>
-                                    <th>
-                                        <h3>Share it on the web</h3>
-                                        <p>Create a local tunnel to your machine to share with clients or friends.</p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <br>
-                                        <div class="credentials">
-                                            <div class="form-group">
-                                                <label>How To</label>
-                                                <div class="form-group">
-                                                    <input type="text" value="vagrant share" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <p>This only works out of the box with Scotch Box Pro. Vagrant Share is not currently supported with this box since some breaking updates with Vagrant.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </article>
 
         <footer>
